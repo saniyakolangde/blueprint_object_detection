@@ -1,0 +1,31 @@
+{
+  "description": "Ground truth configuration for icon detection evaluation",
+  "version": "1.0",
+  "pages": {
+    "page2.png": {
+      "expected_counts": {
+        "fan": 7,
+        "10amp-socket": 0,
+        "15amp-socket": 0,
+        "dbl-10amp-usb-socket": 0,
+        "perm-connect-isolator": 0
+      },
+      "detailed_annotations": []
+    },
+    "page1.png": {
+      "expected_counts": {
+        "fan": 0,
+        "10amp-socket": 4,
+        "15amp-socket": 4,
+        "dbl-10amp-usb-socket": 24,
+        "perm-connect-isolator": 5
+      },
+      "detailed_annotations": []
+    }
+  },
+  "evaluation_settings": {
+    "iou_threshold": 0.5,
+    "confidence_threshold": 0.5,
+    "max_detection_distance": 20
+  }
+}

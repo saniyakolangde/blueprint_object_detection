@@ -1,0 +1,27 @@
+[project]
+name = "yoloe"
+version = "0.1.0"
+description = "YOLO-based icon detection for page analysis"
+requires-python = ">=3.8"
+dependencies = [
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "ultralytics>=8.0.0",
+    "pillow>=10.0.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "matplotlib>=3.7.0",
+    "scikit-image>=0.21.0",
+    "tqdm>=4.65.0",
+    "pyyaml>=6.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0"
+]
